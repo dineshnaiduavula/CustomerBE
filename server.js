@@ -6,6 +6,9 @@ const rou1=require("./Routes/Customer1R")
 const rou2=require("./Routes/Customer2R")
 const rou3=require("./Routes/Customer3R")
 expServer1.use(expServer.json())
+//required for no errors in angualr
+const cors = require('cors');
+expServer1.use(cors());
 
 //connecting to mongo server
 MongoConnection.connect("mongodb://localhost:27017/CustomerData")
