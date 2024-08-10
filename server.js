@@ -15,6 +15,7 @@ MongoConnection.connect("mongodb://localhost:27017/CustomerData")
 //router
 expServer1.use("/",rou1)
 expServer1.use("/",rou2)
+expServer1.use("/",rou3)
 //connecting to port server
 expServer1.listen(port,(error)=>{
     if(error){console.log(`error while connecting to server${error}`)}
